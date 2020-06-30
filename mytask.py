@@ -14,7 +14,7 @@ try:
         print("\nSay what you want to search ? ")
         audio = speech.listen(source)
         searchItem = speech.recognize_google(audio)    #we get the searching object
-        print("Word searched:", searchItem)
+        print("Searching...", searchItem)
         
     #Working with browser
     driver = webdriver.Chrome()
