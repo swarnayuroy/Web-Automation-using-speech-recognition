@@ -37,7 +37,7 @@ try:
     elif(s_engine in ['YouTube', 'Youtube', 'youtube']):
         if(" " in searchItem):
             searchItem = word.replace(" ", "+")
-        searchItem = "https://www.youtube.com/results?search_query=" + searchItem
+        searchItem = "https://www.youtube.com/results?search_query=" + word
         driver.get(searchItem)
     elif(s_engine in ['Wikipedia', 'Wiki', 'wikipedia', 'wiki']):
         driver.get('https://en.wikipedia.org/wiki/Main_Page')
