@@ -25,11 +25,6 @@ try:
         searchButton = driver.find_element_by_xpath('//*[@id="tsf"]/div[2]/div[1]/div[3]/center/input[1]')
         searchButton.click()
     elif(s_engine in ['YouTube', 'Youtube', 'youtube']):
-        '''driver.get('https://youtube.com')
-        searchbox = driver.find_element_by_xpath('//*[@id="search"]')
-        searchbox.send_keys(searchItem)
-        searchButton = driver.find_element_by_xpath('//*[@id="search-icon-legacy"]')
-        searchButton.click()'''
         if(" " in searchItem):
             searchItem = searchItem.replace(" ", "+")
         searchItem = "https://www.youtube.com/results?search_query=" + searchItem
